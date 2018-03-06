@@ -7301,11 +7301,18 @@ a.text-dark:focus, a.text-dark:hover {
       .Header-menu li a.active {
         background-color: #FECA30; }
 
+.Footer {
+  background-color: #2E2E2E;
+  color: #FFF;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 50px; }
+
 .Item {
   font-family: 'ArialMT';
   font-size: 11px;
-  line-height: 24px;
-  padding-bottom: 8px; }
+  line-height: 24px; }
   .Item hr {
     margin-bottom: 10px; }
   .Item--nCategoria hr {
@@ -7319,6 +7326,7 @@ a.text-dark:focus, a.text-dark:hover {
   .Item-var {
     color: #000;
     font-size: 10px;
+    margin: 10px 0px;
     display: flex;
     justify-content: flex-start;
     align-items: center; }
@@ -7350,6 +7358,26 @@ a.text-dark:focus, a.text-dark:hover {
   font-family: 'ArialMT';
   font-weight: bold;
   text-transform: uppercase; }
+  .Checkout-btn {
+    width: 100%;
+    background-color: #FECA30;
+    font-family: 'CWM-Light';
+    border: none;
+    text-transform: uppercase;
+    color: #2E2E2E; }
+  .Checkout-form {
+    margin-top: 20px; }
+    .Checkout-form label.col-form-label {
+      text-transform: capitalize; }
+    .Checkout-form .form-control {
+      line-height: 1; }
+  .Checkout-tel {
+    display: flex;
+    justify-content: space-between; }
+    .Checkout-tel input:first-child {
+      width: 20%; }
+    .Checkout-tel input:last-child {
+      width: 75%; }
   .Checkout-list {
     padding: 0px;
     list-style: none;
