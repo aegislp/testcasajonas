@@ -1,0 +1,159 @@
+$mobile-landscape : 576px;
+$tablet: 768px;
+$table-big: 992px;
+$desktop: 1024px;
+$bigscreen: 1200px;
+
+
+@media all and (min-width: $mobile-landscape) {
+	body{
+		border: 1px solid red;
+	}
+	.Header{
+		&-logo{
+			height: 90px;
+		}
+	}
+	.Item{
+		font-size: 14px;
+		&-var{
+			font-size: 12px;
+			a{
+				width: 16px;
+			    height: 16px;
+			    font-size: 10px;
+			    right: -10px;
+			}
+		}
+		select{
+			height: 20px;
+			margin: 0px 12px;
+			width: auto;
+		}
+		select:nth-child(1){
+			width: auto;
+		}
+		
+	}
+}
+
+@media all and (min-width: $tablet) {
+	body{
+		border: 1px solid blue;
+	}
+}
+
+@media all and (min-width: $table-big) {
+	body{
+		border: 1px solid green;
+	}
+	.Header{
+		background: $primary_color;
+	
+		&-menu{
+			background: $primary_color;
+			align-items: flex-end;
+			li a{
+				color: #FFF;
+				&.active{
+					color: $primary_color;
+				}
+			}
+		}
+		&-container{
+			padding-bottom: 20px;
+			justify-content: space-between;
+
+		}
+	
+		&-logo{
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+	}
+
+	.Checkout{
+		&-form{
+			margin-top: 0px;
+		
+			&-name{
+				line-height: 1;
+			}
+		}
+	}
+	.Item{
+		padding: 10px;
+		hr{
+			display:none;
+		}
+		&:before{
+			content: '';
+			height: 1px;
+			background: #CCC;
+			left: 15px;
+			right: 15px;
+			top: 0px;
+			position: absolute;
+		}
+		&-img{
+			display:block;
+		}
+		&-var-container{
+			display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		border-left: 1px solid #ccc;
+		}
+		&-title{
+		 
+		}
+	}
+	.Item:last-child{
+		&:after{
+			content: '';
+			height: 1px;
+			background: $second_color;
+			left: 15px;
+			right: 15px;
+			bottom: 0px;
+			position: absolute;
+		}
+	}
+
+}
+
+@media all and (min-width: $desktop) {
+	body{
+		border: 1px solid grey;
+	}
+	.Header-menu li a{
+		font-size: 24px;
+		padding: 0 10px;
+	}
+	.Header-logo img{
+		width: 400px;
+	}
+	.Checkout{
+		padding-top: 15px;
+		hr{
+			border: none;
+			display: none;
+		}
+		&-resumen{
+			border-left: 2px solid #CCC;
+		}
+		&-btn{
+			display: none;
+			&--total{
+				display: inline-block !important;
+			}
+		}
+	}
+
+}
+
+@media all and (min-width: $bigscreen) {
+	body{
+		border: 1px solid pink;
+	}
+}
