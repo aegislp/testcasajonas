@@ -129,5 +129,15 @@ $item-text-size: 11px;
 
 		}
 	}
+	&-total{
+		font-size: 22px;
+		strong{
+			font-size: 8px;
+			color: #5d5d5d;
+			text-align: right;
+			text-transform: none;
+			margin-right: 12px;
+		}
+	}
 
 }

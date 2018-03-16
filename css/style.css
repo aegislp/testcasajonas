@@ -7408,6 +7408,14 @@ a.text-dark:focus, a.text-dark:hover {
         display: inline-block;
         width: 60px;
         color: #5d5d5d; }
+  .Checkout-total {
+    font-size: 22px; }
+    .Checkout-total strong {
+      font-size: 8px;
+      color: #5d5d5d;
+      text-align: right;
+      text-transform: none;
+      margin-right: 12px; }
 
 .Detalle .modal-dialog {
   width: 70%;
